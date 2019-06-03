@@ -2,8 +2,88 @@
 <html>
     <head>
         <title>Drag & Drop Exercise</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet" />
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Foo</h1>
+        <div class="container">
+            <div class="left-column">
+                <hgroup>
+                    <h1 class="course-setup-header">Course Setup</h1>
+                    <h2>Select modules to build your new course.</h2>
+                </hgroup>
+                <div class="available-modules">
+                    <h3 class="available-modules-header">Available Modules</h3>
+                    <ul class="available-modules-list">
+                        <li class="available-module module-figure-drawing">
+                            <span class="name">Figure Drawing</span>
+                            <img src="img/handle.svg" class="available-module-handle" />
+                        </li>
+                        <li class="available-module module-3d-rendering">
+                            <span class="name">3D Rendering</span>
+                            <img src="img/handle.svg" class="available-module-handle" />
+                        </li>
+                        <li class="available-module module-art-education">
+                            <span class="name">Art Education</span>
+                            <img src="img/handle.svg" class="available-module-handle" />
+                        </li>
+                        <li class="available-module module-art-history">
+                            <span class="name">Art History</span>
+                            <img src="img/handle.svg" class="available-module-handle" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <button class="btn btn-save-course">Save Course</button>
+                <div class="field field-course-name">
+                    <label for="field-course-name">Course Name</label>
+                    <input type="text" id="field-course-name" placeholder="Add Course Name Here" />
+                </div>
+                <ul class="included-modules">
+                    <li class="included-module module-basics-of-pottery">
+                        <p class="module-number">Module 1</p>
+                        <h2 class="module-name">Learning the basics of pottery</h2>
+                        <div class="exercises">
+                            <img src="img/decrement.svg" class="decrement" />
+                            <span class="exercise-count">4</span>
+                            <img src="img/increment.svg" class="increment" />
+                            exercises
+                        </div>
+                        <img src="img/handle.svg" class="included-module-handle" />
+                    </li>
+
+                    <li class="included-module module-still-life-drawing">
+                        <p class="module-number">Module 2</p>
+                        <h2 class="module-name">Still-life Drawing</h2>
+                        <div class="exercises">
+                            <img src="img/decrement.svg" class="decrement" />
+                            <span class="exercise-count">2</span>
+                            <img src="img/increment.svg" class="increment" />
+                            exercises
+                        </div>
+                        <img src="img/handle.svg" class="included-module-handle" />
+                    </li>
+
+                    <li class="included-module module-painting-101">
+                        <p class="module-number">Module 3</p>
+                        <h2 class="module-name">Painting 101</h2>
+                        <div class="exercises">
+                            <img src="img/decrement.svg" class="decrement" />
+                            <span class="exercise-count">4</span>
+                            <img src="img/increment.svg" class="increment" />
+                            exercises
+                        </div>
+                        <img src="img/handle.svg" class="included-module-handle" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overlay" style="display: none;">
+                <img src="img/check.svg" class="overlay-checkmark" />
+                <span class="overlay-text">Course Saved</span>
+            </div>
+        </div>
     </body>
 </html>
