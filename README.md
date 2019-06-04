@@ -21,7 +21,6 @@ Our team draws inspiration from [sites](https://ca.la/) [like](https://kubrick.l
 Choose one of the subdirectories to work in:
 * [`plain-html`](#plain-html) (no JS framework)
 * [`react`](#react)
-* [`vue`](#vue)
 
 ### plain-html
 
@@ -37,8 +36,12 @@ View the project at http://localhost:3000, and simply refresh the page to see up
 
 ### react
 
-Coming soon...
+Run the project locally:
 
-### vue
+```shell
+cd react
+npm install
+npm start
+```
 
-Coming soon...
+View the project at http://localhost:3000. Changes to source files should be immediately displayed in the browser on save.
